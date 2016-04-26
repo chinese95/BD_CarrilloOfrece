@@ -15,9 +15,9 @@ CREATE SCHEMA IF NOT EXISTS `carrilloofrece` DEFAULT CHARACTER SET utf8 ;
 USE `carrilloofrece` ;
 
 -- -----------------------------------------------------
--- Table `carrilloofrece`.`categoria_productos`
+-- Table `carrilloofrece`.`categoria_negocio`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categoria_productos` (
+CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categoria_producto` (
   `id_categoria` INT(4) NOT NULL AUTO_INCREMENT,
   `cat_nombre` VARCHAR(30) CHARACTER SET 'utf8' NOT NULL,
   PRIMARY KEY (`id_categoria`))
@@ -40,8 +40,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`persona` (
   `id_persona` INT(4) NOT NULL AUTO_INCREMENT,
-  `per_nombres` VARCHAR(35) NOT NULL,
-  `per_apellidos` VARCHAR(40) NOT NULL,
+  `per_nombre` VARCHAR(35) NOT NULL,
+  `per_apellido` VARCHAR(40) NOT NULL,
   `per_correo` VARCHAR(50) CHARACTER SET 'utf8' NOT NULL,
   `per_correo_visible` TINYINT(1) NOT NULL,
   `per_telefono` VARCHAR(10) NULL,
@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`producto` (
   INDEX `fk_producto_persona1_idx` (`id_persona` ASC),
   CONSTRAINT `fk_producto_categoria`
     FOREIGN KEY (`id_categoria`)
-    REFERENCES `carrilloofrece`.`categoria_productos` (`id_categoria`)
+    REFERENCES `carrilloofrece`.`categoria_producto` (`id_categoria`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_producto_persona1`
@@ -91,12 +91,12 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `carrilloofrece`.`categorias_negocios`
+-- Table `carrilloofrece`.`categoria_negocio`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categorias_negocios` (
-  `id_categorias_negocios` INT(4) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categoria_negocio` (
+  `id_categoria_negocio` INT(4) NOT NULL AUTO_INCREMENT,
   `cat_neg_nombre` VARCHAR(25) NOT NULL,
-  PRIMARY KEY (`id_categorias_negocios`))
+  PRIMARY KEY (`id_categoria_negocio`))
 ENGINE = InnoDB;
 
 
@@ -128,18 +128,18 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`negocio` (
   `neg_logo` VARCHAR(30) NOT NULL,
   `neg_calle` VARCHAR(30) NOT NULL,
   `neg_cruzamiento` VARCHAR(30) NOT NULL,
-  `neg_referencias` VARCHAR(100) NOT NULL,
+  `neg_referencia` VARCHAR(100) NOT NULL,
   `neg_red_social` VARCHAR(60) NULL,
-  `id_categorias_negocios` INT(4) NOT NULL,
+  `id_categoria_negocio` INT(4) NOT NULL,
   `id_persona` INT(4) NOT NULL,
   `id_colonia_negocio` INT(4) NOT NULL,
   PRIMARY KEY (`id_negocio`),
-  INDEX `fk_negocio_categorias_negocios1_idx` (`id_categorias_negocios` ASC),
+  INDEX `fk_negocio_categoria_negocio1_idx` (`id_categoria_negocio` ASC),
   INDEX `fk_negocio_persona1_idx` (`id_persona` ASC),
   INDEX `fk_negocio_direccion1_idx` (`id_colonia_negocio` ASC),
-  CONSTRAINT `fk_negocio_categorias_negocios1`
-    FOREIGN KEY (`id_categorias_negocios`)
-    REFERENCES `carrilloofrece`.`categorias_negocios` (`id_categorias_negocios`)
+  CONSTRAINT `fk_negocio_categoria_negocio1`
+    FOREIGN KEY (`id_categoria_negocio`)
+    REFERENCES `carrilloofrece`.`categoria_negocio` (`id_categoria_negocio`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_negocio_persona1`
@@ -156,12 +156,12 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `carrilloofrece`.`categoria_servicios`
+-- Table `carrilloofrece`.`categoria_servicio`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categoria_servicios` (
-  `id_categoria_servicios` INT(4) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categoria_servicio` (
+  `id_categoria_servicio` INT(4) NOT NULL AUTO_INCREMENT,
   `cat_ser_nombre` VARCHAR(25) NOT NULL,
-  PRIMARY KEY (`id_categoria_servicios`))
+  PRIMARY KEY (`id_categoria_servicio`))
 ENGINE = InnoDB;
 
 
@@ -177,9 +177,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `carrilloofrece`.`servicios`
+-- Table `carrilloofrece`.`servicio`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `carrilloofrece`.`servicios` (
+CREATE TABLE IF NOT EXISTS `carrilloofrece`.`servicio` (
   `id_servicio` INT(4) NOT NULL,
   `ser_nombre` VARCHAR(45) NOT NULL,
   `ser_descripcion_breve` VARCHAR(150) NOT NULL,
@@ -191,24 +191,24 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`servicios` (
   `ser_cruzamiento` VARCHAR(30) NOT NULL,
   `ser_referencias` VARCHAR(100) NOT NULL,
   `ser_red_social` VARCHAR(45) NULL,
-  `id_categoria_servicios` INT(4) NOT NULL,
+  `id_categoria_servicio` INT(4) NOT NULL,
   `id_persona` INT(4) NOT NULL,
   `id_colonia_servicio` INT(4) NOT NULL,
   PRIMARY KEY (`id_servicio`),
-  INDEX `fk_servicios_categoria_servicios1_idx` (`id_categoria_servicios` ASC),
-  INDEX `fk_servicios_persona1_idx` (`id_persona` ASC),
-  INDEX `fk_servicios_direccion_servicio1_idx` (`id_colonia_servicio` ASC),
-  CONSTRAINT `fk_servicios_categoria_servicios1`
-    FOREIGN KEY (`id_categoria_servicios`)
-    REFERENCES `carrilloofrece`.`categoria_servicios` (`id_categoria_servicios`)
+  INDEX `fk_servicio_categoria_servicio1_idx` (`id_categoria_servicio` ASC),
+  INDEX `fk_servicio_persona1_idx` (`id_persona` ASC),
+  INDEX `fk_servicio_direccion_servicio1_idx` (`id_colonia_servicio` ASC),
+  CONSTRAINT `fk_servicio_categoria_servicio1`
+    FOREIGN KEY (`id_categoria_servicio`)
+    REFERENCES `carrilloofrece`.`categoria_servicio` (`id_categoria_servicio`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_servicios_persona1`
+  CONSTRAINT `fk_servicio_persona1`
     FOREIGN KEY (`id_persona`)
     REFERENCES `carrilloofrece`.`persona` (`id_persona`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_servicios_direccion_servicio1`
+  CONSTRAINT `fk_servicio_direccion_servicio1`
     FOREIGN KEY (`id_colonia_servicio`)
     REFERENCES `carrilloofrece`.`colonia_servicio` (`id_colonia_servicio`)
     ON DELETE NO ACTION
