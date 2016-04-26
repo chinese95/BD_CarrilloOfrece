@@ -182,7 +182,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`servicios` (
   `id_servicio` INT(4) NOT NULL,
   `ser_nombre` VARCHAR(45) NOT NULL,
-  `ser_descripcion` VARCHAR(200) NOT NULL,
+  `ser_descripcion_breve` VARCHAR(150) NOT NULL,
+  `ser_descripcion_general` VARCHAR(1000) CHARACTER SET 'utf8' NOT NULL,
   `ser_prioridad` DECIMAL(4,2) NOT NULL,
   `ser_fecha_publicacion` DATE NOT NULL,
   `ser_imagen` VARCHAR(45) NOT NULL,
