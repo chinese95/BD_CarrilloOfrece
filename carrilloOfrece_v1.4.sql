@@ -15,7 +15,7 @@ CREATE SCHEMA IF NOT EXISTS `carrilloofrece` DEFAULT CHARACTER SET utf8 ;
 USE `carrilloofrece` ;
 
 -- -----------------------------------------------------
--- Table `carrilloofrece`.`categoria_negocio`
+-- Table `carrilloofrece`.`categoria_producto`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`categoria_producto` (
   `id_categoria` INT(4) NOT NULL AUTO_INCREMENT,
@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`servicio` (
   `ser_imagen` VARCHAR(45) NOT NULL,
   `ser_calle` VARCHAR(30) NOT NULL,
   `ser_cruzamiento` VARCHAR(30) NOT NULL,
-  `ser_referencias` VARCHAR(100) NOT NULL,
+  `ser_referencia` VARCHAR(100) NOT NULL,
   `ser_red_social` VARCHAR(45) NULL,
   `id_categoria_servicio` INT(4) NOT NULL,
   `id_persona` INT(4) NOT NULL,
