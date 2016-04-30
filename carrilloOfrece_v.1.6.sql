@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`negocio` (
   `neg_logo` VARCHAR(30) NOT NULL,
   `neg_calle` VARCHAR(30) NOT NULL,
   `neg_cruzamiento` VARCHAR(30) NOT NULL,
-  `neg_referencias` VARCHAR(100) NOT NULL,
+  `neg_referencia` VARCHAR(100) NOT NULL,
   `neg_red_social` VARCHAR(60) NULL,
   `id_categoria_negocio` INT(4) NOT NULL,
   `id_persona` INT(4) NOT NULL,
@@ -170,8 +170,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`colonia_servicio` (
   `id_colonia_servicio` INT(4) NOT NULL AUTO_INCREMENT,
-  `dir_colonia` VARCHAR(20) NOT NULL,
-  `dir_codigo_postal` VARCHAR(5) NOT NULL,
+  `direc_colonia` VARCHAR(20) NOT NULL,
+  `direc_codigo_postal` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`id_colonia_servicio`))
 ENGINE = InnoDB;
 
@@ -180,7 +180,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`servicio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`servicio` (
-  `id_servicio` INT(4) NOT NULL,
+  `id_servicio` INT(4) NOT NULL AUTO_INCREMENT,
   `ser_nombre` VARCHAR(45) NOT NULL,
   `ser_descripcion_breve` VARCHAR(150) NOT NULL,
   `ser_descripcion_general` VARCHAR(1000) NOT NULL,
