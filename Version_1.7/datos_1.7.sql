@@ -98,15 +98,15 @@ Por lo que siempre te hablamos claro',345.00,'2016-05-09',1,7);
 
 /*--TABLA PUBLICIDAD_PRODUCTO----------------------------------------------------------------------------*/
 
-INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,id_producto) VALUES (20.00,'1',3,1),
+INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,id_producto) VALUES (0.00,'0',0,1),
                                 (60.00,'2',4,2),
                                 (80.00,'3',7,3),
-                                (120.00,'4',5,4),
+                                (0.00,'0',0,4),
                                 (60.00,'5',2,5),
                                 (80.00,'6',3,6),
-                                (25.00,'7',1,7),
+                                (0.00,'0',0,7),
                                 (125.00,'8',4,8),
-                                (60.00,'9',2,9),
+                                (0.00,'0',0,9),
                                 (40.00,'10',1,10);
                            
 /*--TABLA CATEGORIA_NEGOCIO------------------------------------------------------------------------------*/                        
@@ -162,14 +162,14 @@ INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,id_produc
 /*--TABLA PUBLICIDAD_NEGOCIO----------------------------------------------------------------------------*/
 
 INSERT INTO publicidad_negocio (pub_monto_pagado,pub_imagen,pub_meses,id_negocio) VALUES (100.00,'1',5,1),
-                                (40.00,'2',2,2),
+                                (0.00,'0',0,2),
                                 (80.00,'3',5,3),
-                                (25.00,'4',1,4),
+                                (0.00,'0',0,4),
                                 (50.00,'5',2,5),
-                                (30.00,'6',1,6),
+                                (0.00,'0',0,6),
                                 (180.00,'7',6,7),
                                 (350.00,'8',1,8),
-                                (70.00,'9',3,9),
+                                (0.00,'0',0,9),
                                 (90.00,'10',4,10);
                            
 
@@ -226,14 +226,14 @@ INSERT INTO publicidad_negocio (pub_monto_pagado,pub_imagen,pub_meses,id_negocio
 /*--TABLA PUBLICIDAD_SERVCIO----------------------------------------------------------------------------*/
 
 INSERT INTO publicidad_servicio (pub_monto_pagado,pub_imagen,pub_meses,id_servicio) VALUES (50.00,'1',2,1),
-                                (20.00,'2',1,2),
+                                (0.00,'0',0,2),
                                 (80.00,'3',4,3),
-                                (600.00,'4',2,4),
+                                (0.00,'0',0,4),
                                 (50.00,'5',5,5),
-                                (90.00,'6',4,6),
+                                (0.00,'0',0,6),
                                 (20.00,'7',1,7),
                                 (70.00,'8',1,8),
-                                (120.00,'9',6,9),
+                                (0.00,'0',0,9),
                                 (100.00,'10',5,10);
 
 /*--TABLA ADMINISTRADOR------------------------------------------------------------------------------*/ 
