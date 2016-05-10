@@ -19,5 +19,6 @@ SELECT n.id_negocio, n.neg_nombre, n.neg_descripcion_breve FROM negocio n JOIN p
 
 SELECT n.id_negocio, n.neg_nombre, n.neg_descripcion_breve FROM negocio n JOIN publicidad_negocio p ON (n.id_negocio=p.id_negocio) AND (neg_nombre LIKE '%%' OR neg_descripcion_breve LIKE '%%') AND p.pub_monto_pagado=0.00 ORDER BY RAND() LIMIT 0,8;
 
-
+/*Ver todos los datos de un producto*/
+SELECT * FROM producto p, publicidad_producto o WHERE p.id_producto = o.id_producto ORDER BY o.pub_monto_pagado DESC;
 
