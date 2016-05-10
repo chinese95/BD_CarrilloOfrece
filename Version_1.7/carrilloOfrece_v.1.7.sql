@@ -334,7 +334,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`publicidad_producto`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`publicidad_producto` (
-  `id_publicidad_producto` INT(4) NOT NULL,
+  `id_publicidad_producto` INT(4) NOT NULL AUTO_INCREMENT,
   `pub_monto_pagado` DECIMAL(6,2) NOT NULL,
   `pub_imagen` VARCHAR(4) NOT NULL,
   `pub_meses` INT(2) NOT NULL,
@@ -347,7 +347,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`publicidad_negocio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`publicidad_negocio` (
-  `id_publicidad_negocio` INT(4) NOT NULL,
+  `id_publicidad_negocio` INT(4) NOT NULL AUTO_INCREMENT,
   `pub_monto_pagado` DECIMAL(6,2) NOT NULL,
   `pub_imagen` VARCHAR(4) NOT NULL,
   `pub_meses` INT(2) NOT NULL,
@@ -360,7 +360,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`publicidad_servicio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`publicidad_servicio` (
-  `id_publicidad_servicio` INT(4) NOT NULL,
+  `id_publicidad_servicio` INT(4) NOT NULL AUTO_INCREMENT,
   `pub_monto_pagado` DECIMAL(6,2) NOT NULL,
   `pub_imagen` VARCHAR(4) NOT NULL,
   `pub_meses` INT(2) NOT NULL,

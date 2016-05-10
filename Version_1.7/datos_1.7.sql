@@ -95,6 +95,19 @@ Seguridad total para tu pantalla protegiendo ambas curvas de tu S7 edge
 
 En Infinite Wishes estamos comprometidos con la satisfacción de nuestros clientes
 Por lo que siempre te hablamos claro',345.00,'2016-05-09',1,7);
+
+/*--TABLA PUBLICIDAD_PRODUCTO----------------------------------------------------------------------------*/
+
+INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,id_producto) VALUES (20.00,'1',3,1),
+                                (60.00,'2',4,2),
+                                (80.00,'3',7,3),
+                                (120.00,'4',5,4),
+                                (60.00,'5',2,5),
+                                (80.00,'6',3,6),
+                                (25.00,'7',1,7),
+                                (125.00,'8',4,8),
+                                (60.00,'9',2,9),
+                                (40.00,'10',1,10);
                            
 /*--TABLA CATEGORIA_NEGOCIO------------------------------------------------------------------------------*/                        
                            
@@ -145,6 +158,19 @@ Por lo que siempre te hablamos claro',345.00,'2016-05-09',1,7);
                            ('Niplito','4155824-4121455','9842548546','2016-05-08','Conoce y aprovecha los multiples beneficios que te ofrecemos','Es un negocio dedicado a la construcción de una casa desde herramientas hasta piunturas, asi como también plomería y electrónica.','niplito@gmail.com','Chift','Entre 96 y 98','detrás del Oxxo','',21,1,8),
                            ('Banco Azteca','15496-51364','9865246245','2016-05-09','Banco Azteca es un banco que te ofrece, créditos y finanzas con seguridad.','anco Azteca es un banco que nació en octubre del 2002, ante la oportunidad derivada del bajo nivel de bancarización en México. El Banco está orientado al sector de menores ingresos, que representa un 70% de la población no atendida por los bancos tradicionales. Una gran ventaja desde el inicio de operaciones, fue la experiencia de más de 60 años de Grupo Elektra en el otorgamiento de crédito a dicho sector.','banco_azteca@gmail.com','Quetzal','Entre 52 y 54','Con Bernachif','',2,5,9),
                            ('Banamex','215545-5225452','9852145268','2016-05-09','Banamex ofrece los mejores productos y servicios financieros.', 'Tarjetas de Crédito, Créditos hipotecarios, Créditos personales, todo esto te ofrece banamex con toda la segurudad integrada, para administrar bien tu economía y finanzas.','banamex@hotmail.com','La serpiente','Entre 74 y 76','A lado del niño','',2,3,10);
+
+/*--TABLA PUBLICIDAD_NEGOCIO----------------------------------------------------------------------------*/
+
+INSERT INTO publicidad_negocio (pub_monto_pagado,pub_imagen,pub_meses,id_negocio) VALUES (100.00,'1',5,1),
+                                (40.00,'2',2,2),
+                                (80.00,'3',5,3),
+                                (25.00,'4',1,4),
+                                (50.00,'5',2,5),
+                                (30.00,'6',1,6),
+                                (180.00,'7',6,7),
+                                (350.00,'8',1,8),
+                                (70.00,'9',3,9),
+                                (90.00,'10',4,10);
                            
 
 /*--TABLA CATEGORIA_SERVICIO------------------------------------------------------------------------------*/                        
@@ -196,6 +222,19 @@ Por lo que siempre te hablamos claro',345.00,'2016-05-09',1,7);
                            ('Renta de trajes','Los mejores trajes para tus fiestas','Es un servicio de rentas de trajes de novia, de novios o inclusive para grduaciones, con precios económicos, sino, que le pregumten a Valito.','2016-05-08','El gallito','Entre 11 y 13','Frente al mercado','',18,2,8),
                            ('ADO','El mejor servicio en viajes cómodos.','Te ofrecemos servicios de autobus con los mejores precios y calidad, con diferentes clases.','2016-05-09','Don Wicho','Entre 69 y 70','A un costado de Nefta','',18,4,9),
                            ('Renta de bicicletas','Las mejores bicicletas económicas','Un servicio de renta de bicicletas al mejor precio, y con las mejores marcas de bicicletas en el mercado','2016-05-09','Chama','Entre 24 y 26','Por la taberna','',18,1,10);
+                           
+/*--TABLA PUBLICIDAD_SERVCIO----------------------------------------------------------------------------*/
+
+INSERT INTO publicidad_servicio (pub_monto_pagado,pub_imagen,pub_meses,id_servicio) VALUES (50.00,'1',2,1),
+                                (20.00,'2',1,2),
+                                (80.00,'3',4,3),
+                                (600.00,'4',2,4),
+                                (50.00,'5',5,5),
+                                (90.00,'6',4,6),
+                                (20.00,'7',1,7),
+                                (70.00,'8',1,8),
+                                (120.00,'9',6,9),
+                                (100.00,'10',5,10);
 
 /*--TABLA ADMINISTRADOR------------------------------------------------------------------------------*/ 
                            
