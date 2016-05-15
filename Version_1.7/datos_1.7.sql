@@ -26,20 +26,20 @@ INSERT INTO usuario (usu_nombre,usu_contrasenia) VALUES ('espadas950@gmail.com',
                             ('Raul Enrique','Dzids Ku','raul@gmail.com',0,'9836984256',0,'',0,10);                           
                         
 /*--TABLA CATEGORIA_PRODUCTO------------------------------------------------------------------------------*/                                        
- INSERT INTO categoria_producto (cat_pro_nombre) VALUES ('Computación y electrónica'),
-                                        ('Electrodomésticos'),
-                                        ('Salud y belleza'),
-                                        ('Ropa y calzado'),
-                                        ('Muebles'),
-                                        ('Vehículo'),
-                                        ('Mascotas'),
-                                        ('Herramientas'),
-                                        ('Refacciones'),
-                                        ('Entretenimiento'),
+ INSERT INTO categoria_producto (cat_pro_nombre) VALUES ('Arte y antigüedades'),
+                                        ('Computación y electrónica'),
                                         ('Deportes'),
+                                        ('Electrodomésticos'),
+                                        ('Entretenimiento'),
+                                        ('Herramientas'),
                                         ('Inmuebles'),
-                                        ('Arte y antigüedades'),
-                                        ('Instrumentos musicales y audio'),
+                                        ('Mascotas'),
+                                        ('Muebles'),
+                                        ('Música y audio'),
+                                        ('Refacciones'),
+                                        ('Ropa y calzado'),
+                                        ('Salud y belleza'),
+                                        ('Vehículos'),
                                         ('Otros');
                            
 
@@ -102,7 +102,7 @@ INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,id_produc
                                 (60.00,'0',2,2),
                                 (100.00,'3',2,3),
                                 (0.00,'0',0,4),
-                                (60.00,'5',2,5),
+                                (100.00,'5',2,5),
                                 (50.00,'6',1,6),
                                 (0.00,'0',0,7),
                                 (150.00,'8',3,8),
@@ -111,40 +111,49 @@ INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,id_produc
                            
 /*--TABLA CATEGORIA_NEGOCIO------------------------------------------------------------------------------*/                        
                            
- INSERT INTO categoria_negocio (cat_neg_nombre) VALUES ('Transporte'),
-                                      ('Créditos y finanzas'),
-                                      ('Seguros'),
-                                      ('Mantenimiento de cómputo y/o electrónica'),
-                                      ('Mecánico'),
-                                      ('Electricidad y/o electrónica'),
-                                      ('Jurídicos'),
-                                      ('Contables'),
-                                      ('Salón de eventos'),
-                                      ('Educación'),
-                                      ('Arrendamientos inmuebles'),
-                                      ('Entretenimiento'),
-                                      ('Salubridad'),
+ INSERT INTO categoria_negocio (cat_neg_nombre) VALUES ('Agua'),
                                       ('Alimentos y bebidas'),
-                                      ('Internet'),
-                                      ('Cyber y/o papelería'),
-                                      ('Agua'),
+                                      ('Arrendamiento'),
+                                      ('Computadoras y celulares'),
+                                      ('Contables'),
+                                      ('Créditos y finanzas'),
+                                      ('Cyber café'),
                                       ('Domésticos'),
-                                      ('Belleza y salud'),
-                                      ('Comerciales'),
-                                      ('Ferrotlapelería');
+                                      ('Educación'),
+                                      ('Electricidad'),
+                                      ('Electrónica'),
+                                      ('Entretenimiento'),
+                                      ('Ferrotlapalería'),
+                                      ('Internet'),
+                                      ('Jurídicos'),
+                                      ('Mecánico'),
+                                      ('Música y audio'),
+                                      ('Papelería'),
+                                      ('Publicidad'),
+                                      ('Salón de eventos'),
+                                      ('Salubridad'),
+                                      ('Salud y belleza'),
+                                      ('Seguros'),
+                                      ('Comercial'),
+                                      ('Transporte');
                                       
 /*--TABLA COLONIA_NEGOCIO------------------------------------------------------------------------------*/                        
                            
- INSERT INTO colonia_negocio (direc_colonia,direc_codigo_postal) VALUES ('Ejido','77200'),
-                            ('Chemuyil','77780'),
-                            ('Juan Bautista','77520'),
-                            ('El bosque','78954'),
-                            ('San Francisco','89632'),
-                            ('El bailarín','78589'),
-                            ('EL negrazo','65987'),
-                            ('El pollon','87458'),
-                            ('El machin','85498'),
-                            ('La india','85269');
+ INSERT INTO colonia_negocio (direc_colonia,direc_codigo_postal) VALUES ('Constituyentes','77249'),
+                            ('Cecilio Chi','77230'),
+                            ('Emiliano Zapata','77229'),
+                            ('Francisco May','77240'),
+                            ('Centro','77200'),
+                            ('Juan Bautista Vega','77250'),
+                            ('Javier Rojo Gómez','77259'),
+                            ('Leona Vicario','77210'),
+                            ('Lázaro Cárdenas','77239'),
+                            ('Martínez Ross','77220'),
+                            ('Plan de Ayala','77214'),
+                            ('Plan de Ayutla','77215'),
+                            ('Plan de la Noria','77217'),
+                            ('Plan de Guadalupe','77216'),
+                            ('Rafel E Melgar','77238');
                            
 /*--TABLA NEGOCIO------------------------------------------------------------------------------*/                        
                            
@@ -175,40 +184,46 @@ INSERT INTO publicidad_negocio (pub_monto_pagado,pub_imagen,pub_meses,id_negocio
 
 /*--TABLA CATEGORIA_SERVICIO------------------------------------------------------------------------------*/                        
                            
- INSERT INTO categoria_servicio (cat_ser_nombre) VALUES ('Transporte'),
-                                       ('Créditos y finanzas'),
-                                       ('Seguros'),
-                                       ('Mantenimiento de cómputo y/o electrónica'),
-                                       ('Mecánico'),
-                                       ('Electricidad y/o electrónica'),
-                                       ('Jurídicos'),
-                                       ('Contables'),
-                                       ('Salón de eventos'),
-                                       ('Educación'),
-                                       ('Arrendamientos inmuebles'),
-                                       ('Entretenimiento'),
-                                       ('Salubridad'),
+ INSERT INTO categoria_servicio (cat_ser_nombre) VALUES ('Agua'),
                                        ('Alimentos y bebidas'),
-                                       ('Internet'),
-                                       ('Abastecimiento de agua potable'),
+                                       ('Arrendamiento'),
+                                       ('Computadoras y celulares'),
+                                       ('Contables'),
+                                       ('Créditos y finanzas'),
                                        ('Domésticos'),
-                                       ('Belleza y salud'),
-                                       ('Difusión'),
-                                       ('Ferrotlapalería');
+                                       ('Educación'),
+                                       ('Electricidad'),
+                                       ('Electrónica'),
+                                       ('Entretenimiento'),
+                                       ('Internet'),
+                                       ('Jurídicos'),
+                                       ('Mecánico'),
+                                       ('Música y audio'),
+                                       ('Publicidad'),
+                                       ('Salón de eventos'),
+                                       ('Salubridad'),
+                                       ('Salud y belleza'),
+                                       ('Seguros'),
+                                       ('Transporte');
  
                            
 /*--TABLA COLONIA_SERVICIO------------------------------------------------------------------------------*/            
                            
- INSERT INTO colonia_servicio (direc_colonia,direc_codigo_postal) VALUES ('El solar','12546'),
-                                      ('El gallo','66523'),
-                                      ('El monte','33365'),
-                                      ('San Juan','99965'),
-                                      ('Hernán Cortez','77751'),
-                                      ('El jotín','54258'),
-                                      ('El capitán','12584'),
-                                      ('EL iroman','45879'),
-                                      ('El niño','25216'),
-                                      ('El pitin',78954);
+ INSERT INTO colonia_servicio (direc_colonia,direc_codigo_postal) VALUES ('Constituyentes','77249'),
+                            ('Cecilio Chi','77230'),
+                            ('Emiliano Zapata','77229'),
+                            ('Francisco May','77240'),
+                            ('Centro','77200'),
+                            ('Juan Bautista Vega','77250'),
+                            ('Javier Rojo Gómez','77259'),
+                            ('Leona Vicario','77210'),
+                            ('Lázaro Cárdenas','77239'),
+                            ('Martínez Ross','77220'),
+                            ('Plan de Ayala','77214'),
+                            ('Plan de Ayutla','77215'),
+                            ('Plan de la Noria','77217'),
+                            ('Plan de Guadalupe','77216'),
+                            ('Rafel E Melgar','77238');
                            
 /*--TABLA SERVICIO------------------------------------------------------------------------------*/                        
                            
@@ -229,12 +244,12 @@ INSERT INTO publicidad_servicio (pub_monto_pagado,pub_imagen,pub_meses,id_servic
                                 (0.00,'0',0,2),
                                 (60.00,'0',2,3),
                                 (0.00,'0',0,4),
-                                (50.00,'5',5,5),
+                                (250.00,'5',5,5),
                                 (0.00,'0',0,6),
                                 (90.00,'0',3,7),
                                 (150.00,'0',5,8),
                                 (0.00,'0',0,9),
-                                (100.00,'10',5,10);
+                                (100.00,'10',2,10);
 
 /*--TABLA ADMINISTRADOR------------------------------------------------------------------------------*/ 
                            
