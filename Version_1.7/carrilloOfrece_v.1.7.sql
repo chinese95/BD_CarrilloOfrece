@@ -124,6 +124,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`negocio` (
   `neg_cruzamiento` VARCHAR(30) NOT NULL,
   `neg_referencia` VARCHAR(100) NOT NULL,
   `neg_red_social` VARCHAR(60) NULL,
+  `neg_img_busqueda` INT(1) NOT NULL,
   `id_categoria_negocio` INT(4) NOT NULL,
   `id_persona` INT(4) NOT NULL,
   `id_colonia_negocio` INT(4) NOT NULL,
