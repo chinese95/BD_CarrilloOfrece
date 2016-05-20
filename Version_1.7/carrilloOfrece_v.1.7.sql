@@ -227,7 +227,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`fecha`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`fecha` (
-  `fec_fecha` DATE NOT NULL,
+  `fec_fecha` DATE NOT NULL)
 ENGINE = InnoDB;
 
 
