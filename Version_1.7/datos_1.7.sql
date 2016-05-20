@@ -45,11 +45,11 @@ INSERT INTO usuario (usu_nombre,usu_contrasenia) VALUES ('espadas950@gmail.com',
 
 /*--TABLA PRODUCTO------------------------------------------------------------------------------*/                        
                            
- INSERT INTO producto (pro_nombre,pro_descripcion_breve,pro_descripcion_general,pro_precio,pro_fecha_publicacion,id_categoria_producto,id_persona) VALUES ('Memoria RAM','Memoria RAM Kingston','El consejo JEDEC dicta los estándares de ingeniería de los productos de semiconductores y es el ente de estandarización de productos de semiconductores de la Alianza de Industrias Electrónicas (EIA, por su sigla en inglés). Aproximadamente unas 300 compañías que representan a todos los segmentos de la industria participan activamente en el desarrollo de estándares con el fin de satisfacer las necesidades de la industria. Como miembro de hace muchos años de la Junta Directiva del JEDEC, Kingston Technology contribuye a establecer los estándares de tecnología que rigen la industria de los productos de memoria. Todos los productos de memoria de Kingston cumplen con las especificaciones del JEDEC, que se encuentra entre las más importantes de las utilizadas por los fabricantes de productos de semiconductores.',2500.00,'2016-04-21',1,3),
+ INSERT INTO producto (pro_nombre,pro_descripcion_breve,pro_descripcion_general,pro_precio,pro_fecha_publicacion,pro_estatus,id_categoria_producto,id_persona) VALUES ('Memoria RAM','Memoria RAM Kingston','El consejo JEDEC dicta los estándares de ingeniería de los productos de semiconductores y es el ente de estandarización de productos de semiconductores de la Alianza de Industrias Electrónicas (EIA, por su sigla en inglés). Aproximadamente unas 300 compañías que representan a todos los segmentos de la industria participan activamente en el desarrollo de estándares con el fin de satisfacer las necesidades de la industria. Como miembro de hace muchos años de la Junta Directiva del JEDEC, Kingston Technology contribuye a establecer los estándares de tecnología que rigen la industria de los productos de memoria. Todos los productos de memoria de Kingston cumplen con las especificaciones del JEDEC, que se encuentra entre las más importantes de las utilizadas por los fabricantes de productos de semiconductores.',2500.00,'2016-04-21',1,1,3),
                            ('USB ADATA','USB ADATA 16 GB, soporta reproduccion de video y audio 4K.','
-El UE710 se adapta a una amplia audiencia mediante la combinación de la conectividad Rayo y USB certificado por Apple. Es compatible con los dispositivos iPhone, iPad y iPod, que permite la transferencia de datos, así como Ultra HD 4K de vídeo - los usuarios de desagüe de ancho de banda limitado con el intercambio de contenidos y el disfrute directo. Para archivos de gran tamaño y el compromiso social, unidades flash USB de primera calidad como la UE710 siguen siendo superiores a mover el contenido a través de Internet.',600.00,'2016-04-21',1,5),
+El UE710 se adapta a una amplia audiencia mediante la combinación de la conectividad Rayo y USB certificado por Apple. Es compatible con los dispositivos iPhone, iPad y iPod, que permite la transferencia de datos, así como Ultra HD 4K de vídeo - los usuarios de desagüe de ancho de banda limitado con el intercambio de contenidos y el disfrute directo. Para archivos de gran tamaño y el compromiso social, unidades flash USB de primera calidad como la UE710 siguen siendo superiores a mover el contenido a través de Internet.',600.00,'2016-04-21',1,1,5),
                            ('Columpios (shackles)','Columpios (shackles) Para Cherokee Sport Xj + 2 Pulgadas.','Estos columpios aumentan la altura en la suspension trasera de tu Jeep Cherokee Sport XJ  dos pulgadas. Estan fabricadas en placa de 2" ancho y el espesor es de 1/4" son indestructibles.
-La instalacion es sencilla y sin tener que efectuar adaptaciones, se colocan de manera directa.',1080.00,'2016-04-22',9,8),
+La instalacion es sencilla y sin tener que efectuar adaptaciones, se colocan de manera directa.',1080.00,'2016-04-22',1,9,8),
                            ('Anuncio Antiguo De Chiclets Adams','Ponemos a la venta este anuncio antiguo de chiclets adams hecho de lamina fecha de 1951.
 El anuncio se encuentra en muy buenas condiciones, muestra algunas ligeras rayaduras, fue hecho en Monterrey por la fabrica Famosa.
 El anuncio mide 35.5 x 18 cms.','Antes de realizar la compra, lea con atención los siguientes puntos:
@@ -58,7 +58,7 @@ Al momento de realizar la compra, se  adquiere un compromiso con el vendedor de 
 Es muy importante que si ya decidió hacer la compra cuente con el dinero para pagar la pieza.
 Toda compra en falso ocasionara que le ponga una calificación NEGATIVA, no se arriesgue a perjudicar su reputación.
 Puede tener la seguridad y la confianza que su compra es totalmente segura con nosotros, revise nuestra reputación 100% positiva, todos nuestros clientes han estado totalmente satisfechos.
-Puede realizar su pago por medio de cualquier tarjeta de crédito o debito directamente con nosotros y sin comisión.',1100.00,'2016-04-22',13,9),
+Puede realizar su pago por medio de cualquier tarjeta de crédito o debito directamente con nosotros y sin comisión.',1100.00,'2016-04-22',1,13,9),
                            ('Par De Pesas Mancuernas','Par De Pesas Mancuernas 36 Libras, Profesional 100% Metal.','2 mancuernas con discos intercambiables.
 incluye.
 2 barras metálicas con seguros estrella atornillables. 3 Kg. ( 6 libras)
@@ -66,11 +66,11 @@ incluye.
 4 discos de 1 Kg ( 8 libras)
 4 discos de .5 kg ( 4 libras)
 total. 17 kilos igual a 34 libras.
-todo nuevo y 100% metal',575.00,'2016-04-23',3,4),
+todo nuevo y 100% metal',575.00,'2016-04-23',1,3,4),
 ('Mouse Performance Inalámbrico','Performance Mouse
 4 botones programables Cuenta con la tecnologia Darkfield.','Performance Mouse
-4 botones programables Cuenta con la tecnologia Darkfield Navegacion precisa Diseño confortable Cuenta con cargador micro usb. Cuenta con la tecnologia Unyfying',1444.00,'2016-05-08',1,8),
-('Mochila Para Laptop 17','Mochila para Laptop 17" Mobile Edge Alienware Vindicator Modelo AWVBP17','Máximo confort bajo cualquier carga: El panel reforzado, acolchado, moldeado y con ventilación posterior proporciona soporte mientras la costumbre acolchado y correas de los hombros y el pecho con aire de malla ajustable asegurar su comodidad mientras que la distribución del peso de su equipo. El Alienware Vindicador mochila tiene un diseño moderno y elegante que refleja el diseño industrial portátil Nueva Alienware. El exterior de nylon de alta densidad construida artículo protege su engranaje en estilo mientras que la cabeza Alienware icónica permite a todos saber que usted habla en serio.',2350.00,'2016-05-08',1,10),
+4 botones programables Cuenta con la tecnologia Darkfield Navegacion precisa Diseño confortable Cuenta con cargador micro usb. Cuenta con la tecnologia Unyfying',1444.00,'2016-05-08',1,1,8),
+('Mochila Para Laptop 17','Mochila para Laptop 17" Mobile Edge Alienware Vindicator Modelo AWVBP17','Máximo confort bajo cualquier carga: El panel reforzado, acolchado, moldeado y con ventilación posterior proporciona soporte mientras la costumbre acolchado y correas de los hombros y el pecho con aire de malla ajustable asegurar su comodidad mientras que la distribución del peso de su equipo. El Alienware Vindicador mochila tiene un diseño moderno y elegante que refleja el diseño industrial portátil Nueva Alienware. El exterior de nylon de alta densidad construida artículo protege su engranaje en estilo mientras que la cabeza Alienware icónica permite a todos saber que usted habla en serio.',2350.00,'2016-05-08',1,1,10),
 ('Pantalon Tactico Casual Idd','Estos pantalones se pueden acomodar típicos de 1,5 "y 1,75" correas (se venden por separado).','Estos pantalones se pueden acomodar típicos de 1,5 "y 1,75" correas (se venden por separado). Un total de 8 bolsillos! 60% algodón / 40% poliéster rip-stop tela Fundido de tela resistente Diamond Fuelle entrepierna Cintura Elastic Band Grandes bolsas de Carga One D-Ring Por Pocket Cargo Doble la rodilla Tela Aeropuerto friendly Hardware, Heavy Duty Asiento doble Dos bolsillos delanteros de hendidura Dual Front D Anillos Construido en el Strings blousing Slanted Flaps Carga de bolsillo para el acceso Seated Zipper mosca
 100 %ÔRIGINALES Y NUEVOS.
 GARANTIZADOS.
@@ -78,11 +78,11 @@ ENTREGADO EN TU PUERTA EN MENOS DE 5 DIAS HABILES.
 SE ACEPTAN PEDIDOS A MEDIO MAYOREO , DESCUENTO A REVENDEDORES
 TODA LA LINEA TACTICA,UNIFORMES Y ACCESORIOS.
 DISTRIBUIMOS A TODA LA REPUBLICA MEXICANA.
-BLACK KNIGHT SECURITY MEXICO',890.00,'2016-05-08',4,2),
+BLACK KNIGHT SECURITY MEXICO',890.00,'2016-05-08',1,4,2),
 ('Playera Civil War','PLAYERA CIVIL WAR CAPITÁN AMÉRICA VS IRON MAN ARMADURA','Modelo: AMCW002M
 Peso: 106 g/m2
 Tejido: Chifón 100% algodón. 
-¡Producto para venta exclusiva en México!',220.00,'2016-05-09',4,5),
+¡Producto para venta exclusiva en México!',220.00,'2016-05-09',1,4,5),
 ('Mica Cristal Templado ','Mica Cristal Templado Curvo 9h Samsung Galaxy S7 Edge','nfinite Wishes
 Tiene para ti
 Mica Protectora de Cristal Templado
@@ -94,7 +94,7 @@ Seguridad total para tu pantalla protegiendo ambas curvas de tu S7 edge
 ¡Atención a mayoristas con los mejores precios del mercado!
 
 En Infinite Wishes estamos comprometidos con la satisfacción de nuestros clientes
-Por lo que siempre te hablamos claro',345.00,'2016-05-09',1,7);
+Por lo que siempre te hablamos claro',345.00,'2016-05-09',1,1,7);
 
 /*--TABLA PUBLICIDAD_PRODUCTO----------------------------------------------------------------------------*/
 

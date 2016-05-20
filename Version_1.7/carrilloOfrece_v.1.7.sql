@@ -69,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`producto` (
   `pro_descripcion_general` VARCHAR(1000) NOT NULL,
   `pro_precio` DECIMAL(7,2) NOT NULL,
   `pro_fecha_publicacion` DATE NOT NULL,
+  `pro_estatus` TINYINT(1) NOT NULL,
   `id_categoria_producto` INT(4) NOT NULL,
   `id_persona` INT(4) NOT NULL,
   PRIMARY KEY (`id_producto`),
@@ -220,6 +221,13 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`denuncia_producto` (
   `den_fecha` DATE NOT NULL,
   `id_producto` INT(4) NOT NULL,
   PRIMARY KEY (`id_denuncia_producto`))
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `carrilloofrece`.`fecha`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `carrilloofrece`.`fecha` (
+  `fec_fecha` DATE NOT NULL,
 ENGINE = InnoDB;
 
 
