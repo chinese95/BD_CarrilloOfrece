@@ -215,7 +215,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`denuncia_producto`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`denuncia_producto` (
-  `id_denuncia_producto` INT(4) NOT NULL,
+  `id_denuncia_producto` INT(4) NOT NULL AUTO_INCREMENT,
   `den_motivo` VARCHAR(100) NOT NULL,
   `den_fecha` DATE NOT NULL,
   `id_producto` INT(4) NOT NULL,
@@ -239,9 +239,10 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`notificacion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`notificacion` (
-  `id_notificacion` INT(4) NOT NULL,
+  `id_notificacion` INT(4) NOT NULL AUTO_INCREMENT,
   `not_nombre_persona` VARCHAR(35) NULL,
-  `not_correo` VARCHAR(50) NULL,
+  `not_correo` VARCHAR(50) NOT NULL,
+  `not_fecha` DATE NOT NULL,
   `id_producto` INT(4) NOT NULL,
   PRIMARY KEY (`id_notificacion`),
   INDEX `fk_notificacion_producto1_idx` (`id_producto` ASC),
@@ -273,7 +274,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`horario_servicio` (
   `id_servicio` INT(4) NOT NULL,
   `hor_dia` VARCHAR(9) NOT NULL,
   `hor_corte1_apertura` TIME NOT NULL,
-  `hor_corte_cierre` TIME NOT NULL,
+  `hor_corte1_cierre` TIME NOT NULL,
   `hor_corte2_apertura` TIME NULL,
   `hor_corte2_cierre` TIME NULL)
 ENGINE = InnoDB;
@@ -313,7 +314,7 @@ ENGINE = InnoDB;
 -- Table `carrilloofrece`.`denuncia_negocio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`denuncia_negocio` (
-  `id_denuncia_negocio` INT(4) NOT NULL,
+  `id_denuncia_negocio` INT(4) NOT NULL AUTO_INCREMENT,
   `den_motivo` VARCHAR(100) NOT NULL,
   `den_fecha` DATE NOT NULL,
   `id_negocio` INT(4) NOT NULL,
@@ -341,6 +342,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`publicidad_producto` (
   `pub_monto_pagado` DECIMAL(6,2) NOT NULL,
   `pub_imagen` VARCHAR(4) NOT NULL,
   `pub_meses` INT(2) NOT NULL,
+  `pub_fecha` DATE NULL,
   `id_producto` INT(4) NOT NULL,
   PRIMARY KEY (`id_publicidad_producto`))
 ENGINE = InnoDB;
@@ -354,6 +356,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`publicidad_negocio` (
   `pub_monto_pagado` DECIMAL(6,2) NOT NULL,
   `pub_imagen` VARCHAR(4) NOT NULL,
   `pub_meses` INT(2) NOT NULL,
+  `pub_fecha` DATE NULL,
   `id_negocio` INT(4) NOT NULL,
   PRIMARY KEY (`id_publicidad_negocio`))
 ENGINE = InnoDB;
@@ -367,6 +370,7 @@ CREATE TABLE IF NOT EXISTS `carrilloofrece`.`publicidad_servicio` (
   `pub_monto_pagado` DECIMAL(6,2) NOT NULL,
   `pub_imagen` VARCHAR(4) NOT NULL,
   `pub_meses` INT(2) NOT NULL,
+  `pub_fecha` DATE NULL,
   `id_servicio` INT(4) NOT NULL,
   PRIMARY KEY (`id_publicidad_servicio`))
 ENGINE = InnoDB;
