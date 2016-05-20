@@ -256,8 +256,9 @@ INSERT INTO publicidad_servicio (pub_monto_pagado,pub_imagen,pub_meses,pub_fecha
 INSERT INTO administrador (admin_usuario,admin_contrasenia,admin_tipo) VALUES ('Carlos','carlitos',1),
                             ('Valito','elmalito',1),
                             ('Eric','ericsito',1);
-                           
-                           
+  
+/*--TABLA FECHA------------------------------------------------------------------------------*/                          
+INSERT INTO fecha (fec_fecha) VALUES ('2016-05-20');
                            
                            
                            
