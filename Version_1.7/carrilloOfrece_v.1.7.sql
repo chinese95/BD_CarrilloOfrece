@@ -294,7 +294,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`calificacion_negocio` (
   `cal_puntaje` INT(2) NOT NULL,
   `id_usuario` INT(4) NOT NULL,
-  `id_negocio` INT(4) NULL)
+  `id_negocio` INT(4) NULL,
+  PRIMARY KEY (`id_usuario`,`id_negocio`))
 ENGINE = InnoDB;
 
 
@@ -304,7 +305,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`calificacion_servicio` (
   `cal_puntaje` INT(2) NOT NULL,
   `id_usuario` INT(4) NOT NULL,
-  `id_servicio` INT(4) NOT NULL)
+  `id_servicio` INT(4) NOT NULL,
+  PRIMARY KEY (`id_usuario`,`id_servicio`))
 ENGINE = InnoDB;
 
 
@@ -314,7 +316,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `carrilloofrece`.`calificacion_usuario` (
   `cal_puntaje` INT(2) NOT NULL,
   `id_persona` INT(4) NOT NULL,
-  `id_usuario` INT(4) NOT NULL)
+  `id_usuario` INT(4) NOT NULL,
+  PRIMARY KEY (`id_usuario`,`id_persona`))
+
 ENGINE = InnoDB;
 
 
