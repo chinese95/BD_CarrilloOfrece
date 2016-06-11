@@ -114,6 +114,7 @@ INSERT INTO publicidad_producto (pub_monto_pagado,pub_imagen,pub_meses,pub_fecha
  INSERT INTO categoria_negocio (cat_neg_nombre) VALUES ('Agua'),
                                       ('Alimentos y bebidas'),
                                       ('Arrendamiento'),
+                                      ('Bar'),
                                       ('Computadoras y celulares'),
                                       ('Contables'),
                                       ('Créditos y finanzas'),
