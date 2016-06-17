@@ -12,13 +12,11 @@
                                         ('Refacciones'),
                                         ('Ropa y calzado'),
                                         ('Salud y belleza'),
-                                        ('Vehículos'),
-                                        ('Otros');
+                                        ('Vehículos');
              
 /*--TABLA CATEGORIA_NEGOCIO------------------------------------------------------------------------------*/                        
                            
- INSERT INTO categoria_negocio (cat_neg_nombre) VALUES ('Agua'),
-                                      ('Alimentos y bebidas'),
+ INSERT INTO categoria_negocio (cat_neg_nombre) VALUES ('Alimentos y bebidas'),
                                       ('Arrendamiento'),
                                       ('Bar'),
                                       ('Computadoras y celulares'),
@@ -37,6 +35,7 @@
                                       ('Música y audio'),
                                       ('Papelería'),
                                       ('Publicidad'),
+                                      ('Purificadora'),
                                       ('Salón de eventos'),
                                       ('Salubridad'),
                                       ('Salud y belleza'),
@@ -64,7 +63,7 @@
                            
 /*--TABLA CATEGORIA_SERVICIO------------------------------------------------------------------------------*/                        
                            
- INSERT INTO categoria_servicio (cat_ser_nombre) VALUES ('Agua'),
+ INSERT INTO categoria_servicio (cat_ser_nombre) VALUES ('Albañilería'),
                                        ('Alimentos y bebidas'),
                                        ('Arrendamiento'),
                                        ('Computadoras y celulares'),
@@ -79,11 +78,11 @@
                                        ('Jurídicos'),
                                        ('Mecánico'),
                                        ('Música y audio'),
+                                       ('Organización de eventos'),
+                                       ('Plomería'),
                                        ('Publicidad'),
-                                       ('Salón de eventos'),
                                        ('Salubridad'),
                                        ('Salud y belleza'),
-                                       ('Seguros'),
                                        ('Transporte');
  
                            
