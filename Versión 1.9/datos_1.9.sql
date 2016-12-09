@@ -1,7 +1,7 @@
 /*--TABLA USUARIO------------------------------------------------------------------------------*/
 
 INSERT INTO usuario (usu_nombre,usu_contrasenia,usu_tipo) VALUES ('espadas950@gmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
-                           ('ernestovalent@gmail.com','dc599a9972fde3045dab59dbd1ae170b','administrador'),
+                           ('ernestovalent@gmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
                            ('marquitos.pech@gmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
                            ('carlos_cituc@hotmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
                            ('felipe.tun@yahoo.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
@@ -9,7 +9,8 @@ INSERT INTO usuario (usu_nombre,usu_contrasenia,usu_tipo) VALUES ('espadas950@gm
                            ('berna.gatita@hotmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
                            ('uex69@gmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
                            ('eliezer_balam@outlook.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
-                           ('raul@gmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario');
+                           ('raul@gmail.com','dc599a9972fde3045dab59dbd1ae170b','usuario'),
+                           ('carlos.cituc@gmail.com','dc599a9972fde3045dab59dbd1ae170b','administrador');
                            
 
 /*--TABLA PERSONA------------------------------------------------------------------------------*/                        
@@ -23,7 +24,8 @@ INSERT INTO usuario (usu_nombre,usu_contrasenia,usu_tipo) VALUES ('espadas950@gm
                             ('Bernabe','Cituk Caamal','berna.gatita@hotmail.com',0,'9834569875',0,'',0,7),
                             ('Victor','Uex Mis','uex69@gmail.com',0,'9835698546',0,'',0,8),
                             ('Eliezer','Balam Santos','eliezer_balam@outlook.com',0,'9834529872',0,'',0,9),
-                            ('Raul Enrique','Dzids Ku','raul@gmail.com',0,'9836984256',0,'',0,10);                           
+                            ('Raul Enrique','Dzids Ku','raul@gmail.com',0,'9836984256',0,'',0,10),
+                            ('Carlos Alberto','Cituc Chab','carlos.cituc@gmail.com',0,'9833694582',0,'',0,11);                           
                         
 /*--TABLA CATEGORIA_PRODUCTO------------------------------------------------------------------------------*/                                        
  INSERT INTO categoria_producto (cat_pro_nombre) VALUES ('Arte y antigüedades'),
